@@ -1,6 +1,7 @@
 import React from "react";
 import "../Navbar/Navbar.scss";
 import { RiMenu2Fill } from "react-icons/ri";
+import { AiOutlinePlus } from "react-icons/ai";
 const Navbar = () => {
   return (
     <nav id="nav">
@@ -366,8 +367,26 @@ const Navbar = () => {
                     </div>
                   </div>
                 </li>
-                <li>
+                <li id="pages">
                   <p>06</p>
+                  <ul>
+                    <li id="hover_about">
+                      About <AiOutlinePlus />
+                      <ul>
+                        <li>About Us</li>
+                        <li>About Us 2</li>
+                        <li>Our Berau</li>
+                        <li>Our Studio</li>
+                        <li>Error Page</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Contact <AiOutlinePlus />
+                    </li>
+                    <li>
+                      Special Page <AiOutlinePlus />
+                    </li>
+                  </ul>
                   Pages
                 </li>
                 <li>

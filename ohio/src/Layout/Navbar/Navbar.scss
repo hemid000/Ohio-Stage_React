@@ -37,7 +37,7 @@
       list-style-type: none;
       margin: 0px;
       padding: 0px;
-      gap: 54px;
+      gap: 50px;
       li {
         padding: 0px 0 55px 0;
         cursor: pointer;
@@ -62,7 +62,10 @@
       #elements {
         position: relative;
         .list-hover {
-          transition: 0.8s ease-in-out;
+          padding: 16px 15px;
+          border-radius: 19px;
+          box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
+          transition: 0.6s ease-in-out;
           opacity: 0;
           transform: rotateX(90deg);
           margin: 0 50%;
@@ -77,13 +80,31 @@
             gap: 10px;
             align-items: baseline;
             li {
-              padding: 0px !important;
+              width: 100%;
+              padding: 10px 4px !important;
               font-size: 15px;
               line-height: 25px;
+              &:hover {
+                color: rgb(255, 88, 88) !important;
+                background-color: rgb(241, 241, 241);
+              }
+              @media (max-width: 1024px) {
+                font-size: 13px;
+                line-height: 20px;
+              }
             }
             p {
               font-size: 16px;
+              @media (max-width: 1024px) {
+                font-size: 13px;
+              }
             }
+          }
+          @media (max-width: 1400px) {
+            left: -441px;
+          }
+          @media (max-width: 1024px) {
+            left: -344px;
           }
         }
         &:hover {
@@ -96,9 +117,11 @@
       #portfolio {
         position: relative;
         .list-hover {
+          border-radius: 19px;
+          box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
           opacity: 0;
           transform: rotateX(90deg);
-          transition: 0.8s ease-in-out;
+          transition: 0.6s ease-in-out;
           margin: 0 50%;
           width: 1500px;
           left: -642px;
@@ -111,13 +134,31 @@
             gap: 10px;
             align-items: baseline;
             li {
-              padding: 0px !important;
+              width: 100%;
+              padding: 10px 4px !important;
               font-size: 15px;
               line-height: 25px;
+              &:hover {
+                color: rgb(255, 88, 88) !important;
+                background-color: rgb(241, 241, 241);
+              }
+              @media (max-width: 1024px) {
+                font-size: 13px;
+                line-height: 20px;
+              }
             }
             p {
               font-size: 16px;
+              @media (max-width: 1024px) {
+                font-size: 13px;
+              }
             }
+          }
+          @media (max-width: 1400px) {
+            left: -570px;
+          }
+          @media (max-width: 1024px) {
+            left: -453px;
           }
         }
         &:hover {
@@ -130,7 +171,9 @@
       #blog {
         position: relative;
         .list-hover {
-          transition: 0.8s ease-in-out;
+          border-radius: 19px;
+          box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
+          transition: 0.6s ease-in-out;
           opacity: 0;
           transform: rotateX(90deg);
           margin: 0 50%;
@@ -145,13 +188,31 @@
             gap: 10px;
             align-items: baseline;
             li {
-              padding: 0px !important;
+              width: 100%;
+              padding: 10px 4px !important;
               font-size: 15px;
               line-height: 25px;
+              &:hover {
+                color: rgb(255, 88, 88) !important;
+                background-color: rgb(241, 241, 241);
+              }
+              @media (max-width: 1024px) {
+                font-size: 13px;
+                line-height: 20px;
+              }
             }
             p {
               font-size: 16px;
+              @media (max-width: 1024px) {
+                font-size: 13px;
+              }
             }
+          }
+          @media (max-width: 1400px) {
+            left: -673px;
+          }
+          @media (max-width: 1024px) {
+            left: -552px;
           }
         }
         &:hover {
@@ -164,7 +225,9 @@
       #shop {
         position: relative;
         .list-hover {
-          transition: 0.8s ease-in-out;
+          border-radius: 19px;
+          box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
+          transition: 0.6s ease-in-out;
           opacity: 0;
           transform: rotateX(90deg);
           margin: 0 50%;
@@ -179,17 +242,147 @@
             gap: 10px;
             align-items: baseline;
             li {
-              padding: 0px !important;
+              width: 100%;
+              padding: 10px 4px !important;
               font-size: 15px;
               line-height: 25px;
+              &:hover {
+                color: rgb(255, 88, 88) !important;
+                background-color: rgb(241, 241, 241);
+              }
+              @media (max-width: 1024px) {
+                font-size: 13px;
+                line-height: 20px;
+              }
             }
             p {
               font-size: 16px;
+              @media (max-width: 1024px) {
+                font-size: 13px;
+              }
             }
+          }
+          @media (max-width: 1400px) {
+            left: -754px;
+          }
+          @media (max-width: 1024px) {
+            left: -642px;
           }
         }
         &:hover {
           .list-hover {
+            opacity: 1;
+            transform: rotateX(0deg);
+          }
+        }
+      }
+      #pages {
+        position: relative;
+        ul {
+          border-radius: 19px;
+          opacity: 0;
+          transform: rotateX(90deg);
+          padding: 11px 10px;
+          border: 1px solid transparent;
+          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+          // opacity: 0;
+          // transform: rotateX(90deg);
+          transition: 0.6s ease-in-out;
+          /* margin: 0 50%; */
+          width: 240px;
+          left: -20px;
+          top: 90px;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: baseline;
+          li {
+            width: 100%;
+            padding: 10px 4px !important;
+            font-size: 15px;
+            line-height: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            svg {
+              font-size: 19px;
+              transition: 0.4s ease-in-out;
+              transform: rotate(0deg);
+            }
+            &:hover {
+              svg {
+                transform: rotate(180deg);
+                color: black;
+              }
+
+              color: rgb(255, 88, 88) !important;
+              background-color: rgb(241, 241, 241);
+            }
+
+            @media (max-width: 1240px) {
+              line-height: 20px;
+            }
+            @media (max-width: 1024px) {
+              font-size: 12px;
+              line-height: 15px;
+            }
+          }
+          @media (max-width: 1400px) {
+            width: 222px;
+            padding: 4px 8px;
+          }
+          @media (max-width: 1240px) {
+            width: 200px;
+            padding: 4px 5px;
+          }
+          @media (max-width: 1024px) {
+            width: 161px;
+          }
+        }
+        #hover_about {
+          position: relative;
+          ul {
+            opacity: 0;
+            transform: rotateX(90deg);
+            opacity: none;
+            position: absolute;
+            top: 0px;
+            left: 230px;
+            width: 200px;
+            li {
+              @media (max-width: 1400px) {
+                line-height: 20px;
+              }
+              @media (max-width: 1024px) {
+                line-height: 14px;
+                font-size: 11px;
+              }
+            }
+            @media (max-width: 1400px) {
+              left: 212px;
+              width: 180px;
+            }
+            @media (max-width: 1240px) {
+              left: 195px;
+              width: 175px;
+              padding: 4px 6px;
+            }
+            @media (max-width: 1024px) {
+              left: 154px;
+              width: 120px;
+            }
+          }
+          &:hover {
+            ul {
+              opacity: 1;
+              transform: rotateX(0deg);
+            }
+          }
+        }
+        &:hover {
+          ul {
             opacity: 1;
             transform: rotateX(0deg);
           }
