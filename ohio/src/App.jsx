@@ -1,14 +1,17 @@
-import Offer from "./Components/Pages/Home/Offer/Offer";
-import Services from "./Components/Pages/Home/Services/Services";
-import ProductImg from "./Components/Pages/Home/ProductImg/ProductImg";
-function App() {
+import React from "react";
+
+import { Routes, Route } from "react-router-dom";
+import Router from "../src/router";
+
+const App = () => {
   return (
-    <main>
-      <Offer />
-      <Services />
-      <ProductImg />
-    </main>
+    <Routes>
+      {Router &&
+        Router.map((el, index) => (
+          <Route key={index} path={el.path} element={el.component} />
+        ))}
+    </Routes>
   );
-}
+};
 
 export default App;

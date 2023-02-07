@@ -3,6 +3,7 @@ import "../Navbar/Navbar.scss";
 import { RiMenu2Fill } from "react-icons/ri";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
@@ -20,10 +21,12 @@ const Navbar = () => {
                 />
               </div>
               <div className="img">
-                <img
-                  src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/YbUt6che-OhioLogo.svg"
-                  alt=""
-                />
+                <Link to={"/"}>
+                  <img
+                    src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/YbUt6che-OhioLogo.svg"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -32,7 +35,7 @@ const Navbar = () => {
               <ul>
                 <li>
                   <p>01</p>
-                  Home
+                  <Link to={"/"}>Home</Link>
                 </li>
                 <li id="elements">
                   <p>02</p>
@@ -387,9 +390,13 @@ const Navbar = () => {
                         <li>Error Page</li>
                       </ul>
                     </li>
+
                     <li>
-                      Contact <AiOutlinePlus />
+                      <Link to={"/contact"}>
+                        Contact <AiOutlinePlus />{" "}
+                      </Link>
                     </li>
+
                     <li>
                       Special Page <AiOutlinePlus />
                     </li>
