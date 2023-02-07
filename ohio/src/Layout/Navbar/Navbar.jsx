@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Navbar/Navbar.scss";
 import { RiMenu2Fill } from "react-icons/ri";
 import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
+  const [show, setShow] = useState(false);
   return (
     <nav id="nav">
       <div className="container-fluid p-3">
@@ -10,7 +12,12 @@ const Navbar = () => {
           <div className="col-3">
             <div className="left_side">
               <div className="menu-all">
-                <RiMenu2Fill style={{ fontSize: "25px", cursor: "pointer" }} />
+                <RiMenu2Fill
+                  onClick={() => {
+                    setShow(true);
+                  }}
+                  style={{ fontSize: "25px", cursor: "pointer" }}
+                />
               </div>
               <div className="img">
                 <img
@@ -403,6 +410,91 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {show && (
+        <div className="hamburger_nav">
+          <div className="container">
+            <div className="row">
+              <div className="header">
+                <AiOutlineClose
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                  style={{ color: "white" }}
+                />
+              </div>
+              <div className="body_list">
+                <ul>
+                  <div className="right_hover">
+                    <li id="page">
+                      <p>01</p>
+                      Pages
+                      <ul>
+                        <li>About</li>
+                        <li>Home</li>
+                        <li>404 Page</li>
+                        <li>Coming soon</li>
+                        <li>Sign in/Sign out</li>
+                      </ul>
+                    </li>
+                    <AiOutlinePlus />
+                  </div>
+                  <div className="right_hover">
+                    <li>
+                      <p>02</p>
+                      Projects
+                    </li>
+                    <AiOutlinePlus />
+                  </div>
+                  <div className="right_hover">
+                    <li id="blog">
+                      <p>03</p>
+                      Blog
+                      <ul>
+                        <li>Grid view</li>
+
+                        <li>Single post</li>
+                        <li>Coming soon</li>
+                      </ul>
+                    </li>
+                    <AiOutlinePlus />
+                  </div>
+                  <div className="right_hover">
+                    <li>
+                      <p>04</p>
+                      Shop
+                    </li>
+                    <AiOutlinePlus />
+                  </div>
+                  <div className="right_hover">
+                    <li>
+                      <p>05</p>
+                      Purchase
+                    </li>
+                    <AiOutlinePlus />
+                  </div>
+                </ul>
+              </div>
+              <div className="footer_field">
+                <div className="mid1">
+                  <p>Get In Touch</p>
+                  <span>
+                    541 Melville Ave, Palo Alto, CA 94301,
+                    ask@ohio.clbthemes.com Ph: +1.831.705.5448
+                  </span>
+                </div>
+                <div className="mid1">
+                  <p>Get In Touch</p>
+                  <span>
+                    541 Melville Ave, Palo Alto, CA 94301,
+                    ask@ohio.clbthemes.com Ph: +1.831.705.5448
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

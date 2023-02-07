@@ -408,4 +408,125 @@
       }
     }
   }
+  .hamburger_nav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.927);
+    .header {
+      color: white;
+      margin-top: 50px;
+      svg {
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+    .body_list {
+      ul {
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        align-items: baseline;
+        margin: 120px 10px 10px 20px;
+        padding: 0px;
+        flex-direction: column;
+        .right_hover {
+          display: flex;
+          align-items: center;
+          width: 20%;
+
+          gap: 10px;
+          flex-direction: row;
+          li {
+            transition: 0.4s ease-in-out;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-direction: row;
+            line-height: 3rem;
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            cursor: pointer;
+            p {
+              transition: 0.2s ease-in-out;
+              display: flex;
+              align-items: center;
+              margin: 0px;
+              padding: 0px;
+              font-size: 12px;
+            }
+          }
+          #page {
+            position: relative;
+            ul {
+              opacity: 0;
+              position: absolute;
+              top: -121px;
+              left: 232px;
+              width: 240px;
+            }
+            &:hover {
+              ul {
+                opacity: 1;
+              }
+            }
+          }
+          #blog {
+            position: relative;
+            ul {
+              display: none;
+              position: absolute;
+              top: -121px;
+              left: 232px;
+              width: 240px;
+            }
+            &:hover {
+              ul {
+                display: block;
+              }
+            }
+          }
+          svg {
+            font-size: 25px;
+            color: rgb(224, 224, 224);
+            transition: 0.4s ease-in-out;
+            transform: rotate(0deg);
+          }
+          &:hover {
+            svg {
+              transform: rotate(135deg);
+            }
+            li {
+              transform: translateX(20px);
+              p {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_field {
+      width: 100%;
+      display: flex;
+      flex-direction: row !important;
+
+      gap: 20px;
+      margin-top: 80px;
+      p {
+        color: white;
+      }
+      span {
+        display: inline-block;
+        color: rgb(129, 129, 129);
+        width: 60%;
+      }
+    }
+  }
 }
