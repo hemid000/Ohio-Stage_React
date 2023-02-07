@@ -1,4 +1,6 @@
 #nav {
+  position: relative;
+  z-index: 21321;
   box-sizing: border-box;
   .left_side {
     display: flex;
@@ -73,6 +75,7 @@
           left: -517px;
           top: 90px;
           position: absolute;
+          background-color: white;
           ul {
             top: 0px;
             display: flex;
@@ -117,6 +120,7 @@
       #portfolio {
         position: relative;
         .list-hover {
+          background-color: white;
           border-radius: 19px;
           box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
           opacity: 0;
@@ -171,6 +175,7 @@
       #blog {
         position: relative;
         .list-hover {
+          background-color: white;
           border-radius: 19px;
           box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
           transition: 0.6s ease-in-out;
@@ -225,6 +230,7 @@
       #shop {
         position: relative;
         .list-hover {
+          background-color: white;
           border-radius: 19px;
           box-shadow: rgba(0, 0, 0, 0.05) -4px 9px 25px -6px;
           transition: 0.6s ease-in-out;
@@ -279,6 +285,7 @@
       #pages {
         position: relative;
         ul {
+          background-color: white;
           border-radius: 19px;
           opacity: 0;
           transform: rotateX(90deg);
@@ -344,6 +351,7 @@
         #hover_about {
           position: relative;
           ul {
+            background-color: white;
             opacity: 0;
             transform: rotateX(90deg);
             opacity: none;
