@@ -34,6 +34,7 @@ const Capabilities = () => {
               >
                 <AiOutlinePlus /> Website & Mobile App Design
               </p>
+
               {show && (
                 <span>
                   Using year-over-year design approaches and latest techs, we
