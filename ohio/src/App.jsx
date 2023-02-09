@@ -1,8 +1,6 @@
 import React from "react";
-
 import { Routes, Route } from "react-router-dom";
 import Router from "../src/router";
-
 const App = () => {
   return (
     <Routes>
@@ -13,5 +11,4 @@ const App = () => {
     </Routes>
   );
 };
-
 export default App;

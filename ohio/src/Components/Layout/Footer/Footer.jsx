@@ -73,7 +73,7 @@ const Footer = () => {
                     />
                     <button type="submit">Sign up</button>
                     <input type="checkbox" id="scales" name="scales" required />
-                    <label for="scales">
+                    <label>
                       I’m okay with getting emails and having that activity
                       tracked to improve my experience.
                     </label>

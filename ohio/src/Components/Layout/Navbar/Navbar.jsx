@@ -4,21 +4,30 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Cursor from "../../Animation/Cursor";
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    window.scrollY > 120 ? setNavbar(true) : setNavbar(false);
+  };
+
+  window.addEventListener("scroll", changeBackground);
   return (
-    <nav id="nav">
+    <nav className={navbar ? "nav active" : "nav"}>
+      <Cursor />
       <div className="container-fluid p-3">
         <div className="row">
           <div className="col-3">
             <div className="left_side">
-              <div className="menu-all">
-                <RiMenu2Fill
-                  onClick={() => {
-                    setShow(true);
-                  }}
-                  style={{ fontSize: "25px", cursor: "pointer" }}
-                />
+              <div
+                onClick={() => {
+                  setShow(true);
+                }}
+                className="menu-all"
+              >
+                <RiMenu2Fill style={{ fontSize: "25px", cursor: "pointer" }} />
               </div>
               <div className="img">
                 <Link to={"/"}>
@@ -33,7 +42,7 @@ const Navbar = () => {
           <div className="col-7">
             <div className="middle_side">
               <ul>
-                <li>
+                <li id="home">
                   <p>01</p>
                   <Link to={"/"}>Home</Link>
                 </li>
