@@ -1,6 +1,6 @@
 import React from "react";
 import "../DarkMode/DarkMode.scss";
-import { BsMoonStarsFill, BsSun } from "react-icons/bs";
+import { BsMoonStarsFill, BsSun, BsFillCloudMoonFill } from "react-icons/bs";
 
 const DarkMode = () => {
   let clickedClass = "clicked";
@@ -37,7 +37,7 @@ const DarkMode = () => {
       onClick={(e) => switchTheme(e)}
     >
       {" "}
-      <BsMoonStarsFill className="moon" />
+      <BsFillCloudMoonFill style={{ fontSize: "24px" }} className="moon" />
       <BsSun
         className="sun"
         style={{ color: "rgb(255, 255, 255)", fontSize: "20px" }}

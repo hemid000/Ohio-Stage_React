@@ -1,4 +1,8 @@
 #foot {
+  a {
+    text-decoration: none;
+    color: white;
+  }
   box-sizing: border-box;
   .upside {
     background-color: #111013;
@@ -108,6 +112,9 @@
           color: black;
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
+          @media (max-width: 1200px) {
+            width: 68%;
+          }
         }
         button {
           border-top-right-radius: 5px;
@@ -118,6 +125,9 @@
           background-color: rgb(225, 225, 225);
           outline: none;
           font-size: 14px;
+          @media (max-width: 1200px) {
+            width: 32%;
+          }
         }
         label {
           display: inline;

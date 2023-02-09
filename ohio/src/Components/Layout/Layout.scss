@@ -23,6 +23,7 @@ body.dark {
     display: block;
   }
   .moon {
+    color: black;
     display: none;
   }
   background: #161519 !important;
@@ -37,11 +38,9 @@ body.dark {
       background-attachment: black;
       li {
         color: rgb(235, 235, 235);
-
         a {
           color: rgb(235, 235, 235);
         }
-
         &:hover {
           color: white;
         }
@@ -55,5 +54,24 @@ body.dark {
   .nav.active {
     background-color: black;
     color: white;
+  }
+  #capabilities {
+    .right_side {
+      background-color: black;
+    }
+  }
+  #brand_info {
+    color: black !important;
+  }
+  #foot {
+    li {
+      color: white !important;
+    }
+    span {
+      color: white !important;
+    }
+    p {
+      color: white !important;
+    }
   }
 }

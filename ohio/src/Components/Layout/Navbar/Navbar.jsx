@@ -144,8 +144,12 @@ const Navbar = () => {
                       <div className="col-lg-2">
                         <ul>
                           <p>WIDGETS</p>
-                          <li> Accordion</li>
-                          <li>Banner</li>
+                          <Link to={"/portfolio"}>
+                            {" "}
+                            <li> Classic</li>
+                          </Link>
+
+                          <li>Classic Acordion</li>
                           <li>Blog Posts</li>
                           <li>Button</li>
                           <li>Call to Action</li>
@@ -229,7 +233,11 @@ const Navbar = () => {
                       <div className="col-lg-2">
                         <ul>
                           <p>WIDGETS</p>
-                          <li> Accordion</li>
+                          <Link to={"/blog"}>
+                            {" "}
+                            <li> Classic</li>
+                          </Link>
+
                           <li>Banner</li>
                           <li>Blog Posts</li>
                           <li>Button</li>
@@ -243,7 +251,7 @@ const Navbar = () => {
                       <div className="col-lg-2">
                         <ul>
                           <p>WIDGETS</p>
-                          <li>Contact Form</li>
+                          <li>Inner</li>
                           <li>Countdown</li>
                           <li>Counter</li>
                           <li>Dynamic Text</li>
@@ -257,7 +265,7 @@ const Navbar = () => {
                       <div className="col-lg-2">
                         <ul>
                           <p>WIDGETS</p>
-                          <li>Icon Box</li>
+                          <li>Standard</li>
                           <li>Instagram Feed</li>
                           <li>Message</li>
                           <li>Parallax</li>
@@ -342,7 +350,10 @@ const Navbar = () => {
                       <div className="col-lg-2">
                         <ul>
                           <p>WIDGETS</p>
-                          <li>Icon Box</li>
+                          <Link to={"/products"}>
+                            <li>Standard Product</li>
+                          </Link>
+
                           <li>Instagram Feed</li>
                           <li>Message</li>
                           <li>Parallax</li>
@@ -401,7 +412,10 @@ const Navbar = () => {
                         <li>About Us 2</li>
                         <li>Our Berau</li>
                         <li>Our Studio</li>
-                        <li>Error Page</li>
+                        <Link to={"/*"}>
+                          {" "}
+                          <li>Error Page</li>
+                        </Link>
                       </ul>
                     </li>
 
@@ -421,6 +435,11 @@ const Navbar = () => {
                   <p>07</p>
                   Help
                 </li>
+                <li>
+                  <DarkMode />
+                </li>
+              </ul>
+              <ul id="mobiledark">
                 <li>
                   <DarkMode />
                 </li>

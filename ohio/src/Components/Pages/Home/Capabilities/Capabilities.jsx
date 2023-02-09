@@ -74,75 +74,75 @@ const Capabilities = () => {
           </div>
         </div>
       </div>
-      <div className="container up_img">
-        <div className="row">
-          <div className="col-lg-2">
+      <div className="container  up_img">
+        <div className="row g-3">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-2-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-4-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-6-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-8-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-10-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-1-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-3-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-5-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-7-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-9-min.png"
               alt=""
             />
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 col-md-4 col-6">
             <img
               src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-11-min.png"
               alt=""

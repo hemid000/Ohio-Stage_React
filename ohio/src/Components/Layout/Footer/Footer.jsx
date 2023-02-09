@@ -1,6 +1,7 @@
 import React from "react";
 import "../Footer/Footer.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer id="foot">
@@ -18,9 +19,11 @@ const Footer = () => {
               </div>
               <div className="right_side">
                 <ul>
-                  <li>
-                    Contact Us <AiOutlineArrowRight />
-                  </li>
+                  <Link to={"/contact"}>
+                    <li>
+                      Contact Us <AiOutlineArrowRight />
+                    </li>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -35,12 +38,19 @@ const Footer = () => {
       <div className="downside">
         <div className="container">
           <div className="row g-3">
-            <div className="col-lg-3">
-              <img
-                id="foot-img"
-                src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/YbUt6che-OhioLogo.svg"
-                alt=""
-              />
+            <div className="col-lg-3 ">
+              <Link to={"/"}>
+                <img
+                  id="light-img"
+                  src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/YbUt6che-OhioLogo.svg"
+                  alt=""
+                />
+                <img
+                  id="dark-img"
+                  src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/dD4R9CMZ-OhioLogoInverse.svg"
+                  alt=""
+                />
+              </Link>
               <br />
               <p>
                 <strong>Fb. / Ig. / Tw. / Be.</strong>
@@ -48,7 +58,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-9 right_down">
               <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4  col-md-6 col-sm-6">
                   <span>Rotterdam</span>
                   <p>Ohio Digital Media LTD.</p>
                   <ul>
@@ -57,12 +67,12 @@ const Footer = () => {
                     <li>Netherlands</li>
                   </ul>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4  col-md-6 col-sm-6">
                   <span>Work inquiries</span>
                   <span>Interested in working with us?</span>
                   <p>hello@clbthemes.com</p>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 col-sm-6">
                   <span>Sign up for the newsletter</span>
                   <form action="">
                     <input
@@ -79,7 +89,7 @@ const Footer = () => {
                     </label>
                   </form>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 col-sm-6">
                   <span>Barcelona</span>
                   <p>Ohio Digital LTD.</p>
                   <ul>
@@ -87,7 +97,7 @@ const Footer = () => {
                     <li>Catalanes, BA 08015</li>
                   </ul>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 col-sm-6">
                   <span>Career</span>
 
                   <ul>

@@ -419,9 +419,19 @@
           }
         }
       }
+
+      @media (max-width: 920px) {
+        display: none;
+      }
     }
-    @media (max-width: 920px) {
+    #mobiledark {
       display: none;
+      @media (max-width: 920px) {
+        display: block;
+      }
+      @media (max-width: 500px) {
+        margin: 0 0 0 191px;
+      }
     }
   }
   .right_side {
