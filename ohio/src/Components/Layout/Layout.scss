@@ -4,3 +4,56 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+body.light {
+  background: white;
+  color: black;
+  #dark-img {
+    display: none;
+  }
+  .sun {
+    display: none;
+  }
+}
+body.dark {
+  #light-img {
+    display: none;
+  }
+  #dark-mode-img {
+    display: block;
+  }
+  .moon {
+    display: none;
+  }
+  background: #161519 !important;
+  color: rgb(255, 255, 255);
+
+  .nav {
+    .menu-all {
+      background-color: transparent !important;
+      color: white !important;
+    }
+    ul {
+      background-attachment: black;
+      li {
+        color: rgb(235, 235, 235);
+
+        a {
+          color: rgb(235, 235, 235);
+        }
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .list-hover {
+      background-color: black !important;
+      color: white;
+    }
+  }
+  .nav.active {
+    background-color: black;
+    color: white;
+  }
+}

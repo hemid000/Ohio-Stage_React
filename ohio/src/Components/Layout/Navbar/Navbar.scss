@@ -16,6 +16,12 @@
   background-color: transparent;
   z-index: 21321;
   box-sizing: border-box;
+
+  .darkmode {
+    position: fixed;
+    top: 200px;
+    left: 20px;
+  }
   .left_side {
     display: flex;
     align-items: center;
@@ -29,6 +35,9 @@
       height: 50px;
       border-radius: 50%;
       background-color: rgb(243, 243, 243);
+      @media (max-width: 650px) {
+        background-color: transparent;
+      }
     }
     .img {
       cursor: pointer;
@@ -118,10 +127,10 @@
             }
           }
           @media (max-width: 1400px) {
-            left: -441px;
+            left: -421px;
           }
           @media (max-width: 1024px) {
-            left: -344px;
+            left: -314px;
           }
         }
         &:hover {
@@ -173,10 +182,10 @@
             }
           }
           @media (max-width: 1400px) {
-            left: -570px;
+            left: -540px;
           }
           @media (max-width: 1024px) {
-            left: -453px;
+            left: -433px;
           }
         }
         &:hover {
@@ -228,10 +237,10 @@
             }
           }
           @media (max-width: 1400px) {
-            left: -673px;
+            left: -643px;
           }
           @media (max-width: 1024px) {
-            left: -552px;
+            left: -532px;
           }
         }
         &:hover {
@@ -283,10 +292,10 @@
             }
           }
           @media (max-width: 1400px) {
-            left: -754px;
+            left: -724px;
           }
           @media (max-width: 1024px) {
-            left: -642px;
+            left: -622px;
           }
         }
         &:hover {
@@ -411,6 +420,9 @@
         }
       }
     }
+    @media (max-width: 920px) {
+      display: none;
+    }
   }
   .right_side {
     display: flex;
@@ -427,6 +439,18 @@
       transition: 0.3s ease-in-out;
       &:hover {
         background-color: rgb(255, 25, 25);
+      }
+      @media (max-width: 1228px) {
+        width: 50%;
+      }
+      @media (max-width: 920px) {
+        width: 80%;
+      }
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+      @media (max-width: 500px) {
+        display: none;
       }
     }
   }
@@ -483,6 +507,9 @@
               padding: 0px;
               font-size: 12px;
             }
+            @media (max-width: 700px) {
+              font-size: 24px;
+            }
           }
           #page {
             position: relative;
@@ -492,6 +519,12 @@
               top: -121px;
               left: 232px;
               width: 240px;
+              @media (max-width: 1000px) {
+                left: 100px;
+              }
+              @media (max-width: 700px) {
+                left: 80px;
+              }
             }
             &:hover {
               ul {
@@ -507,6 +540,12 @@
               top: -121px;
               left: 232px;
               width: 240px;
+              @media (max-width: 1000px) {
+                left: 100px;
+              }
+              @media (max-width: 700px) {
+                left: 80px;
+              }
             }
             &:hover {
               ul {
@@ -519,6 +558,9 @@
             color: rgb(224, 224, 224);
             transition: 0.4s ease-in-out;
             transform: rotate(0deg);
+            @media (max-width: 1000px) {
+              display: none;
+            }
           }
           &:hover {
             svg {

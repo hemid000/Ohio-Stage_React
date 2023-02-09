@@ -4,7 +4,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Cursor from "../../Animation/Cursor";
+import DarkMode from "../../DarkMode/DarkMode";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -16,7 +16,6 @@ const Navbar = () => {
   window.addEventListener("scroll", changeBackground);
   return (
     <nav className={navbar ? "nav active" : "nav"}>
-      <Cursor />
       <div className="container-fluid p-3">
         <div className="row">
           <div className="col-3">
@@ -32,7 +31,13 @@ const Navbar = () => {
               <div className="img">
                 <Link to={"/"}>
                   <img
+                    id="light-img"
                     src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/YbUt6che-OhioLogo.svg"
+                    alt=""
+                  />
+                  <img
+                    id="dark-img"
+                    src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/dD4R9CMZ-OhioLogoInverse.svg"
                     alt=""
                   />
                 </Link>
@@ -415,6 +420,9 @@ const Navbar = () => {
                 <li>
                   <p>07</p>
                   Help
+                </li>
+                <li>
+                  <DarkMode />
                 </li>
               </ul>
             </div>

@@ -80,9 +80,9 @@ const ProductImg = () => {
 
       {show && (
         <div className="full_info">
-          <div className="container-fluid p-0">
+          <div className="container-fluid p-0 ">
             <div className="row">
-              <div className="col-lg-7 p-0">
+              <div className="col-lg-7 col-md-6 col-sm-12 p-0">
                 <div className="img">
                   <img
                     src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/zdfLZADL-oh__demo31__1.jpeg"
@@ -90,7 +90,7 @@ const ProductImg = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 p-0">
+              <div className="col-lg-5 col-md-6 col-sm-12 p-0 ">
                 <div className="close">
                   <AiOutlineClose
                     onClick={() => {
