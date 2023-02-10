@@ -1,0 +1,140 @@
+#foot {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  box-sizing: border-box;
+  .upside {
+    background-color: #111013;
+    padding: 50px 0;
+    .upfoot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left_side {
+        span {
+          font-size: 15px;
+          font-weight: 600;
+          color: rgb(210, 210, 210);
+        }
+        h3 {
+          font-size: 45px;
+          color: white;
+          margin: 10px 0;
+        }
+      }
+      .right_side {
+        ul {
+          list-style-type: none;
+          li {
+            transition: 0.3s ease-in-out;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            background-color: #ff2424;
+            list-style: none;
+            cursor: pointer;
+            border-radius: 10px;
+            gap: 4px;
+            &:hover {
+              background-color: rgb(32, 32, 32);
+            }
+          }
+        }
+      }
+    }
+    p {
+      margin-top: 40px;
+      width: 70%;
+      position: relative;
+      color: white;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(210, 210, 210);
+      }
+    }
+  }
+  .downside {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    #foot-img {
+      width: 90px;
+      height: 45px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+    p {
+      margin-top: 20px;
+    }
+    .right_down {
+      span {
+        font-weight: 550;
+        color: black;
+        display: block;
+      }
+      p {
+        margin-top: 20px;
+        color: black;
+        font-weight: 700;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        li {
+          line-height: 30px;
+          transition: 0.3s ease-in-out;
+          color: black;
+          list-style: none;
+          cursor: pointer;
+          width: 100%;
+        }
+      }
+      form {
+        width: 100%;
+        #inp_sign {
+          font-size: 14px;
+          width: 70%;
+          outline: none;
+          padding: 10px 10px;
+          border: transparent;
+          background-color: rgb(246, 246, 246);
+          color: black;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          @media (max-width: 1200px) {
+            width: 68%;
+          }
+        }
+        button {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          padding: 10px;
+          width: 30%;
+          border: none;
+          background-color: rgb(225, 225, 225);
+          outline: none;
+          font-size: 14px;
+          @media (max-width: 1200px) {
+            width: 32%;
+          }
+        }
+        label {
+          display: inline;
+          font-size: 14px;
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+  }
+}
