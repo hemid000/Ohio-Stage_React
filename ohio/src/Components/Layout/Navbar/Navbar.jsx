@@ -5,6 +5,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import DarkMode from "../../DarkMode/DarkMode";
+import Cursor from "../../Animation/Cursor";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
   window.addEventListener("scroll", changeBackground);
   return (
     <nav className={navbar ? "nav active" : "nav"}>
+      <Cursor />
       <div className="container-fluid p-3">
         <div className="row">
           <div className="col-3">
