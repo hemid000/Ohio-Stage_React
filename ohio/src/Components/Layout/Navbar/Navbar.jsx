@@ -476,8 +476,14 @@ const Navbar = () => {
                       Pages
                       <ul>
                         <li>About</li>
-                        <li>Home</li>
-                        <li>404 Page</li>
+                        <Link to={"/"}>
+                          <li>Home</li>
+                        </Link>
+                        <Link to={"/*"}>
+                          {" "}
+                          <li>404 Page</li>
+                        </Link>
+
                         <li>Coming soon</li>
                         <li>Sign in/Sign out</li>
                       </ul>
@@ -492,23 +498,31 @@ const Navbar = () => {
                     <AiOutlinePlus />
                   </div>
                   <div className="right_hover">
-                    <li id="blog">
-                      <p>03</p>
-                      Blog
-                      <ul>
-                        <li>Grid view</li>
+                    <Link to={"/blog"}>
+                      {" "}
+                      <li id="blog">
+                        <p>03</p>
+                        Blog
+                        <ul>
+                          <li>Grid view</li>
 
-                        <li>Single post</li>
-                        <li>Coming soon</li>
-                      </ul>
-                    </li>
+                          <li>Single post</li>
+                          <li>Coming soon</li>
+                        </ul>
+                      </li>
+                    </Link>
+
                     <AiOutlinePlus />
                   </div>
                   <div className="right_hover">
-                    <li>
-                      <p>04</p>
-                      Shop
-                    </li>
+                    <Link to={"/products"}>
+                      {" "}
+                      <li>
+                        <p>04</p>
+                        Shop
+                      </li>
+                    </Link>
+
                     <AiOutlinePlus />
                   </div>
                   <div className="right_hover">
