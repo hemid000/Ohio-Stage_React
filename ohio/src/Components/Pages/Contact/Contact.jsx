@@ -4,7 +4,7 @@ const Contact = () => {
     <div>
       <h3>necesen</h3>
 
-      <h1>salam</h1>
+      <h1>hihihi suuuuuu</h1>
     </div>
   );
 };
