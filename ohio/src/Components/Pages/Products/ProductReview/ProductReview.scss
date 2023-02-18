@@ -1,0 +1,137 @@
+#infore {
+  padding: 80px 0;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 17px;
+    margin: 20px 0;
+    li {
+      padding: 10px 0;
+      list-style: none;
+      color: black;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .li1 {
+      border-bottom: 1px solid black;
+    }
+    .li2 {
+      border-bottom: 1px solid black;
+    }
+    .li3 {
+      border-bottom: 1px solid black;
+    }
+  }
+  .decription {
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    padding: 20px 0;
+    .img {
+      position: relative;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    h5 {
+      margin: 18px 0;
+      font-weight: 650;
+    }
+    p {
+      font-size: 15px;
+      color: rgb(38, 38, 38);
+      margin: 10px 0 40px 0;
+      width: 80%;
+    }
+    .down {
+      display: flex;
+      margin: 20px 0 30px 0;
+      gap: 30px;
+
+      p {
+        font-size: 17px;
+        margin: 10px 0;
+      }
+      span {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        color: rgb(38, 38, 38);
+      }
+    }
+    #help {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid black;
+      color: black;
+      display: inline;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        border: 1px solid red;
+        color: red;
+      }
+    }
+  }
+
+  .additional {
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    padding: 20px 0;
+    .info {
+      border-bottom: 1px solid rgb(81, 81, 81);
+      border-top: 1px solid rgb(81, 81, 81);
+      padding: 10px 0;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .review {
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    padding: 20px 0;
+    label {
+      margin: 10px 0;
+    }
+    #details {
+      width: 100%;
+      font-size: 15px;
+      padding: 10px;
+      outline: none;
+      background-color: rgb(234, 234, 234);
+      border: transparent;
+      border-radius: 6px;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      #agreesign {
+        font-size: 13px;
+      }
+      #scales {
+        padding: 20px;
+      }
+    }
+    #submit {
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      outline: none;
+      transition: 0.3s ease-in-out;
+      border: transparent;
+      border-radius: 8px;
+      margin-top: 20px;
+      &:hover {
+        background-color: rgb(255, 51, 51);
+      }
+    }
+  }
+}
