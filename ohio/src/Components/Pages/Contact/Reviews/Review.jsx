@@ -5,27 +5,27 @@ const Review = () => {
     <section id="review">
       <div className="container before_line">
         <div className="row g-3">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <label htmlFor="">Name (required)</label>
             <input type="text" id="text" placeholder="Your name" />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <label htmlFor="">Company (required)</label>
             <input type="text" id="text" placeholder="Your company name" />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <label htmlFor="">Email (required)</label>
             <input type="text" id="text" placeholder="Your email" />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <label htmlFor="">Phone (optional)</label>
             <input type="text" id="text" placeholder="Your number" />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <label htmlFor="">Subject (optional)</label>
             <input type="text" id="text" placeholder="Choose a subject" />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <label htmlFor="">Choose a Budget (USD)</label>
             <select name="select">
               <option value="valor1">Less than 5K</option>

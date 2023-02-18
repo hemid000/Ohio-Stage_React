@@ -8,10 +8,10 @@ const Touch = () => {
           <strong>Home :</strong> Contact: Agency
         </span>
 
-        <div className="row">
-          <div className="col-lg-6">
+        <div className="row g-3">
+          <div className="col-lg-6 col-6">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <p>Get in touch</p>
                 <ul>
                   <li>Work Inquiries</li>
@@ -23,7 +23,7 @@ const Touch = () => {
                   <li>6 am to 8 pm EST</li>
                 </ul>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <p>Careers</p>
                 <ul>
                   <li>Careers & Press</li>
@@ -37,9 +37,9 @@ const Touch = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-6">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <p>Post address</p>
                 <ul>
                   <li>541 Melville Ave, Palo Alto,</li>
@@ -47,7 +47,7 @@ const Touch = () => {
                   <li>United States</li>
                 </ul>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6  col-md-6 col-sm-12">
                 <p>Social media</p>
                 <ul>
                   <li>

@@ -52,8 +52,20 @@ body.dark {
     }
     #pages {
       ul {
-        background-color: black;
-        color: white;
+        background-color: black !important;
+        color: white !important;
+
+        li {
+          a {
+            &:hover {
+              background-color: white !important;
+              color: red !important;
+            }
+          }
+          &:hover {
+            color: red !important;
+          }
+        }
       }
     }
   }
