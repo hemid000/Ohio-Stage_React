@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body.light {
+  background: white;
+  color: black;
+  #dark-img {
+    display: none;
+  }
+  .sun {
+    display: none;
+  }
+}
+body.dark {
+  #light-img {
+    display: none;
+  }
+  #dark-mode-img {
+    display: block;
+  }
+  .moon {
+    color: black;
+    display: none;
+  }
+  background: #161519 !important;
+  color: rgb(255, 255, 255);
+
+  .nav {
+    .menu-all {
+      background-color: transparent !important;
+      color: white !important;
+    }
+    ul {
+      background-attachment: black;
+      li {
+        color: rgb(235, 235, 235);
+        a {
+          color: rgb(235, 235, 235);
+        }
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .list-hover {
+      background-color: black !important;
+      color: white;
+    }
+    #pages {
+      ul {
+        background-color: black !important;
+        color: white !important;
+
+        li {
+          a {
+            &:hover {
+              background-color: white !important;
+              color: red !important;
+            }
+          }
+          &:hover {
+            color: red !important;
+          }
+        }
+      }
+    }
+  }
+  .nav.active {
+    background-color: black;
+    color: white;
+  }
+  #capabilities {
+    .right_side {
+      background-color: black;
+    }
+  }
+  #brand_info {
+    color: black !important;
+  }
+  #foot {
+    li {
+      color: white !important;
+    }
+    span {
+      color: white !important;
+    }
+    p {
+      color: white !important;
+    }
+  }
+
+  #classic_blog {
+    ul {
+      li {
+        color: white !important;
+      }
+    }
+    .all_cart {
+      ul {
+        li {
+          color: black !important;
+        }
+      }
+    }
+  }
+  #touch {
+    ul {
+      li {
+        color: white;
+      }
+    }
+  }
+}
