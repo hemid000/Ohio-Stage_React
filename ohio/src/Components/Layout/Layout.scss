@@ -114,4 +114,63 @@ body.dark {
       }
     }
   }
+  #standart_pro {
+    ul {
+      li {
+        color: white !important;
+      }
+    }
+    svg {
+      color: black;
+    }
+  }
+  #infore {
+    background-color: #161519 !important;
+    ul {
+      li {
+        color: white !important;
+      }
+    }
+    .li1 {
+      border-bottom: 1px solid white;
+    }
+    .li2 {
+      border-bottom: 1px solid white;
+    }
+    .li3 {
+      border-bottom: 1px solid white;
+    }
+    .decription {
+      color: white !important;
+      background-color: #161519 !important;
+      h3 {
+        color: white !important;
+      }
+      p {
+        color: white !important;
+      }
+      #help {
+        border: 2px solid white !important;
+      }
+      span {
+        color: white;
+      }
+    }
+    .additional {
+      color: white !important;
+      background-color: #161519 !important;
+    }
+    .review {
+      color: black;
+      background-color: #161519 !important;
+      label {
+        color: white;
+      }
+    }
+  }
+  #related {
+    svg {
+      color: black;
+    }
+  }
 }

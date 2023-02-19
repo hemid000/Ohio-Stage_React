@@ -20,9 +20,9 @@ const Products = () => {
         <strong>Shop :</strong> <strong>Chairs :</strong> Modern Upholstery
         Stool
         <div className="row g-5 mt-5">
-          <div className="col-lg-7">
+          <div className="col-lg-7 col-md-6 col-sm-12">
             <div className="row g-3">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="img">
                   <img
                     src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/kfnQjzZB-ProductImage__018.jpg"
@@ -30,7 +30,7 @@ const Products = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="img">
                   <img
                     src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/vvT68sbJ-ProductImage__017.jpg"
@@ -45,7 +45,7 @@ const Products = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="img">
                   <img
                     src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/nHTDq8be-ProductImage__019.jpg"
@@ -53,7 +53,7 @@ const Products = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="img">
                   <img
                     src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/ProductImage__020.jpg"
@@ -63,7 +63,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 rightside">
+          <div className="col-lg-5 col-md-6 col-sm-12 rightside">
             <span id="stock">In stock</span>
             <h3>Modern Upholstery Stool</h3>
             <ul>

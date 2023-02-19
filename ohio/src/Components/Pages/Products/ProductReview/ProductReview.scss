@@ -13,6 +13,15 @@
       font-size: 18px;
       font-weight: 700;
       cursor: pointer;
+      @media (max-width: 800px) {
+        font-size: 16px;
+      }
+      @media (max-width: 460px) {
+        font-size: 14px;
+      }
+      @media (max-width: 400px) {
+        font-size: 12px;
+      }
     }
     .li1 {
       border-bottom: 1px solid black;
@@ -41,12 +50,26 @@
     h5 {
       margin: 18px 0;
       font-weight: 650;
+      @media (max-width: 420px) {
+        font-size: 20px;
+      }
+      @media (max-width: 380px) {
+        font-size: 17px;
+      }
     }
     p {
       font-size: 15px;
       color: rgb(38, 38, 38);
       margin: 10px 0 40px 0;
       width: 80%;
+
+      @media (max-width: 420px) {
+        font-size: 13px;
+      }
+
+      @media (max-width: 380px) {
+        font-size: 11px;
+      }
     }
     .down {
       display: flex;
