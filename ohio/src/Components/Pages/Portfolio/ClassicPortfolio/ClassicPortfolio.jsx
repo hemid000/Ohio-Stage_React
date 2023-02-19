@@ -13,7 +13,7 @@ const ClassicPortfolio = () => {
     <section id="classicportfolio">
       <div className="container text-center">
         <h2>Classic</h2>
-        <ul>
+        <ul id="line">
           <li id="left">WPBakery</li>
           <li id="right">Elementor</li>
         </ul>
@@ -33,7 +33,7 @@ const ClassicPortfolio = () => {
           >
             All
           </li>{" "}
-          /
+          <span>/</span>{" "}
           <li
             onClick={() => {
               setAll(false) ||
@@ -46,7 +46,7 @@ const ClassicPortfolio = () => {
           >
             Apps
           </li>{" "}
-          /
+          <span>/</span>
           <li
             onClick={() => {
               setAll(false) ||
@@ -59,7 +59,7 @@ const ClassicPortfolio = () => {
           >
             Branding
           </li>{" "}
-          /
+          <span>/</span>{" "}
           <li
             onClick={() => {
               setAll(false) ||
@@ -72,7 +72,7 @@ const ClassicPortfolio = () => {
           >
             Creative
           </li>{" "}
-          /
+          <span>/</span>{" "}
           <li
             onClick={() => {
               setAll(false) ||
@@ -85,7 +85,7 @@ const ClassicPortfolio = () => {
           >
             Identity
           </li>{" "}
-          /
+          <span>/</span>{" "}
           <li
             onClick={() => {
               setAll(false) ||

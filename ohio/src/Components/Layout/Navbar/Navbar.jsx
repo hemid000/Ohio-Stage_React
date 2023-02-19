@@ -420,13 +420,11 @@ const Navbar = () => {
                         </Link>
                       </ul>
                     </li>
-
-                    <li>
-                      <Link to={"/contact"}>
+                    <Link to={"/contact"}>
+                      <li>
                         Contact <AiOutlinePlus />{" "}
-                      </Link>
-                    </li>
-
+                      </li>
+                    </Link>
                     <li>
                       Special Page <AiOutlinePlus />
                     </li>

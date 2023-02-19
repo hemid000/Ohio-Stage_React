@@ -40,6 +40,10 @@ body.dark {
         color: rgb(235, 235, 235);
         a {
           color: rgb(235, 235, 235);
+
+          &:hover {
+            color: red;
+          }
         }
         &:hover {
           color: white;
@@ -171,6 +175,13 @@ body.dark {
   #related {
     svg {
       color: black;
+    }
+  }
+  #classicportfolio {
+    #line {
+      #right {
+        color: white;
+      }
     }
   }
 }
