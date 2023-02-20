@@ -184,4 +184,12 @@ body.dark {
       }
     }
   }
+  #error {
+    #lighterr {
+      display: none;
+    }
+    #darkerr {
+      display: block;
+    }
+  }
 }
