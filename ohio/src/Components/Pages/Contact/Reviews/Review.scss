@@ -1,0 +1,58 @@
+#review {
+  padding: 40px 0;
+  label {
+    margin: 5px 0;
+  }
+  .before_line {
+    position: relative;
+    padding: 80px 0 20px 0;
+    &::before {
+      width: 100%;
+      position: absolute;
+      top: 2px;
+      left: 0px;
+      content: "";
+      background-color: rgb(57, 57, 57);
+      height: 1px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 8px;
+      font-size: 15px;
+      outline: none;
+      background-color: rgb(234, 234, 234);
+      border: transparent;
+      border-radius: 6px;
+    }
+    select {
+      width: 100%;
+      padding: 12px 8px;
+      font-size: 15px;
+      outline: none;
+      background-color: rgb(234, 234, 234);
+      border: transparent;
+      border-radius: 6px;
+    }
+  }
+  #details {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(234, 234, 234);
+    border: transparent;
+    border-radius: 6px;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    #agreesign {
+      font-size: 13px;
+    }
+    #scales {
+      padding: 20px;
+    }
+  }
+}
